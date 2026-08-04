@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "KA Crowdin Translator",
+  "version": "5.0",
+  "description": "AI-powered batch translation for Khan Academy's Crowdin translation portal. Bring your own API key (Gemini, OpenAI, or Anthropic Claude) — supports 75+ languages with glossary-guided terminology.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://*.crowdin.com/*",
+    "https://crowdin.com/*",
+    "https://*.khanacademy.org/*",
+    "https://khanacademy.org/*",
+    "https://translate.googleapis.com/*",
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.openai.com/*",
+    "https://api.anthropic.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.crowdin.com/*",
+        "https://crowdin.com/*",
+        "https://*.khanacademy.org/*",
+        "https://khanacademy.org/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
