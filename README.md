@@ -65,6 +65,7 @@ Click the extension icon to open the settings popup:
    - **Model override** — use a different model than the default (e.g. `gemini-2.5-pro`, `gpt-4o`, `claude-sonnet-4-5`).
    - **Glossary URLs** — see [Glossary guide](#glossary-guide) below.
 6. **Save Settings.**
+![Translation settings panel](screenshots/settings.png)
 
 ## Usage
 
@@ -73,7 +74,10 @@ Click the extension icon to open the settings popup:
 2. Two floating buttons appear bottom-right:
    - **⚡ Translate All** — translates and saves every untranslated string on the page, with a progress overlay (pause anytime with ⏹ Stop)
    - **🌐 Translate This** — opens a panel for the currently selected string: translate, review/edit the output, then Insert & Save
+   ![Two floating buttons "Translate All" and "Translate This"](screenshots/translate_buttons.png)
+
 3. Review the results in Crowdin as you normally would. AI output is a draft for human review, not a replacement for it.
+![View showing source language (English) and a generated translation](screenshots/confirm_translation.png)
 
 ## Glossary guide
 
@@ -137,11 +141,7 @@ Console debugging: DevTools on the KA page, filter by `[KAT]` (top frame) or `[K
 
 ## Contributing
 
-Issues and pull requests welcome. Areas we'd love help with:
-
-- Additional AI providers (the provider layer is one function per provider in `content.js` — see `callGemini` / `callOpenAI` / `callAnthropic`)
-- Language-specific prompt rules (the current terminology/gender rules were tuned for Indic languages — other language families will benefit from their own)
-- Crowdin UI robustness (selectors for source extraction and save-button detection live in `setupIframeMode`)
+Not accepting contributions.
 
 ## Repository layout
 
