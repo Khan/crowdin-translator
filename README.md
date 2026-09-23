@@ -2,7 +2,7 @@
 
 A Chrome extension that batch-translates Khan Academy content on the [Crowdin](https://crowdin.com) translation portal using AI — **bring your own API key** (Google Gemini, OpenAI, or Anthropic Claude) and translate entire exercises in one click while keeping math, widgets, and formatting perfectly intact.
 
-Built by the Khan Academy India localization team, now available for every KA language community worldwide.
+Built by Gaganpreet Singh from Khan India team, now available for every KA language community worldwide.
 
 ---
 
